@@ -28,7 +28,7 @@ if __name__ == "__main__":
             s3obj = response["Messages"][0]["Body"]
 
             #download file locally
-            s3.download_file(os.environ["S3_URL"], s3obj, s3obj.split("/")[-1])
+            s3.download_file(os.environ["S3_BUCKET"], s3obj, s3obj.split("/")[-1])
 
             #create command to run fr-hit
             command = "fr-hit -d " + os.environ["REF_GENOME"].split("/")[-1][:-3] + " -a " + s3obj.split("/")[-1] + " -o " + s3obj.split("/")[-1] + ".out -c " + os.environ["PARAM_C"] + " -m " + os.environ["PARAM_M"] + " -T " + os.environ["PARAM_T"]

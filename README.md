@@ -1,6 +1,6 @@
 jh-metagenomicsproject
 ===========
-This repository contains code used for my metagenomics final project. The repository contains a few scripts that utilize a few technologies such as docker and AWS S3 and AWS SQS to parallelize the fragment recruitment algorithm tool called FR-HIT (Qin J, et al. Nature 2010, 464:59). The scripts and DOCKERFILE automatically run with the instructions provided to pull files from S3 via a queue to speed up the efficient processing of FR-HIT. By utilizing containers, you can process reads magnitudes quicker by launching more containers to assist with the processing.
+This repository contains code used for my metagenomics final project. The repository contains a few scripts that utilize a few technologies such as docker and AWS S3 and AWS SQS to parallelize the fragment recruitment algorithm tool called FR-HIT (Niu, B. et al. Bioinformatics 2011). The scripts and DOCKERFILE automatically run with the instructions provided to pull files from S3 via a queue to speed up the efficient processing of FR-HIT. By utilizing containers, you can process reads magnitudes quicker by launching more containers to assist with the processing.
 
 Current version: 0.1
 

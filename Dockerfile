@@ -15,9 +15,6 @@ RUN git remote add origin https://github.com/Beifang/fr-hit.git
 RUN git pull origin master
 RUN make
 RUN mv fr-hit /usr/local/bin
-#RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-#RUN unzip awscliv2.zip
-#RUN ./aws/install
 RUN git clone https://github.com/dchen75-jh/jh-metagenomicsproject
 RUN wget $REF_GENOME
 RUN for f in *.gz ; do gzip -d "$f" > ./"{f$.*}" ; done
